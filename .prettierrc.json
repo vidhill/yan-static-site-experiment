@@ -1,0 +1,13 @@
+{
+    "tabWidth": 4,
+    "singleQuote": true,
+    "overrides": [
+        {
+            "files": ["*.hbs", "*.njk"],
+            "options": {
+                "parser": "html",
+                "printWidth": 150
+            }
+        }
+    ]
+}
