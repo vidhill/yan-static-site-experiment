@@ -1,25 +1,26 @@
 {
-  "name": "yan-static-site-experiment",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "eleventy --input=src",
-    "build:serve": "npm run build -- --serve"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vidhill/yan-static-site-experiment.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vidhill/yan-static-site-experiment/issues"
-  },
-  "homepage": "https://github.com/vidhill/yan-static-site-experiment#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.11.1"
-  }
+    "name": "yan-static-site-experiment",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "eleventy --input=src",
+        "build:serve": "npm run build -- --serve"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vidhill/yan-static-site-experiment.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/vidhill/yan-static-site-experiment/issues"
+    },
+    "homepage": "https://github.com/vidhill/yan-static-site-experiment#readme",
+    "devDependencies": {
+        "@11ty/eleventy": "^0.11.1",
+        "markdown-it": "^12.0.6"
+    }
 }
