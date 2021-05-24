@@ -13,7 +13,7 @@
         "watch:eleventy": "npm run build:eleventy -- --serve",
         "lint": "npm run lint-html:check",
         "lint:fix": "npm run lint-html:fix",
-        "lint-html": "prettier \"src/**/*.{html,handlebars,njk,md}\"",
+        "lint-html": "prettier \"src/**/*.{html,handlebars,njk,md,scss}\"",
         "lint-html:check": "npm run lint-html -- --check",
         "lint-html:fix": "npm run lint-html -- --write",
         "prepare": "husky install"
