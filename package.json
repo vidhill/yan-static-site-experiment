@@ -5,6 +5,10 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "npm-run-all build:*",
+        "start": "npm-run-all build:sass --parallel watch:*",
+        "watch:sass": "npm run build:sass -- --watch",
+        "build:sass": "sass src/scss:public/css",
         "build:eleventy": "eleventy",
         "watch:eleventy": "npm run build -- --serve",
         "lint": "npm run lint-html:check",
