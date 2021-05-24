@@ -10,7 +10,7 @@
         "watch:sass": "npm run build:sass -- --watch",
         "build:sass": "sass src/scss:public/css",
         "build:eleventy": "eleventy",
-        "watch:eleventy": "npm run build -- --serve",
+        "watch:eleventy": "npm run build:eleventy -- --serve",
         "lint": "npm run lint-html:check",
         "lint:fix": "npm run lint-html:fix",
         "lint-html": "prettier \"src/**/*.{html,handlebars,njk,md}\"",
