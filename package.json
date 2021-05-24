@@ -22,6 +22,7 @@
     "homepage": "https://github.com/vidhill/yan-static-site-experiment#readme",
     "devDependencies": {
         "@11ty/eleventy": "^0.11.1",
-        "markdown-it": "^12.0.6"
+        "markdown-it": "^12.0.6",
+        "prettier": "^2.3.0"
     }
 }
