@@ -5,8 +5,9 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "eleventy --input=src",
-        "build:serve": "npm run build -- --serve"
+        "build:eleventy": "eleventy",
+        "watch:eleventy": "npm run build -- --serve",
+        "watch:sass": "sass --watch src/scss:"
     },
     "repository": {
         "type": "git",
