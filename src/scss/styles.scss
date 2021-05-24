@@ -1,5 +1,13 @@
+@use "./colours";
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     box-sizing: border-box;
+    background: colours.$secondary;
+}
+
+main {
+    max-width: 60rem;
+    margin: 0 auto;
+    
 }
