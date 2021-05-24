@@ -11,7 +11,8 @@
         "lint:fix": "npm run lint-html:fix",
         "lint-html": "prettier \"src/**/*.{html,handlebars,njk,md}\"",
         "lint-html:check": "npm run lint-html -- --check",
-        "lint-html:fix": "npm run lint-html -- --write"
+        "lint-html:fix": "npm run lint-html -- --write",
+        "prepare": "husky install"
     },
     "repository": {
         "type": "git",
@@ -26,6 +27,7 @@
     "homepage": "https://github.com/vidhill/yan-static-site-experiment#readme",
     "devDependencies": {
         "@11ty/eleventy": "^0.12.1",
+        "husky": "^6.0.0",
         "markdown-it": "^12.0.6",
         "prettier": "^2.3.0"
     }
