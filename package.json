@@ -7,7 +7,11 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build:eleventy": "eleventy",
         "watch:eleventy": "npm run build -- --serve",
-        "watch:sass": "sass --watch src/scss:"
+        "lint": "npm run lint-html:check",
+        "lint:fix": "npm run lint-html:fix",
+        "lint-html": "prettier \"src/**/*.{html,handlebars,njk,md}\"",
+        "lint-html:check": "npm run lint-html -- --check",
+        "lint-html:fix": "npm run lint-html -- --write"
     },
     "repository": {
         "type": "git",
