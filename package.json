@@ -11,14 +11,15 @@
         "build:sass": "sass src/scss:public/css",
         "build:eleventy": "eleventy",
         "watch:eleventy": "npm run build:eleventy -- --serve",
-        "lint": "npm-run-all --parallel lint-html:check lint-scss",
-        "lint:fix": "npm-run-all --parallel lint-html:fix lint-scss:fix",
+        "lint": "npm-run-all --parallel lint-js lint-html:check lint-scss",
+        "lint:fix": "npm-run-all --parallel lint-js:fix lint-html:fix lint-scss:fix",
         "lint-html": "prettier \"src/**/*.{html,handlebars,njk,md}\"",
         "lint-html:check": "npm run lint-html -- --check",
         "lint-html:fix": "npm run lint-html -- --write",
         "lint-scss": "stylelint \"src/**/*.scss\"",
         "lint-scss:fix": "npm run lint-scss -- --fix",
-        "lint-js": "eslint \"src/**/*.js\"",
+        "lint-js": "eslint *.js \"src/**/*.js\"",
+        "lint-js:fix": "npm run lint-js -- --fix",
         "prepare": "husky install"
     },
     "repository": {
