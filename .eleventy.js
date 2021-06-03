@@ -1,5 +1,5 @@
 const svgContents = require('eleventy-plugin-svg-contents');
-const markdownShortcode = require('./mardown-shortcode');
+const markdownShortcode = require('./markdown-shortcode');
 
 const cssPath = './src/scss/';
 
