@@ -1,9 +1,19 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-home
+footerLinks:
+    - label: Github
+      link: https://github.com/vidhill
+    - label: Twitter
+      link: https://twitter.com/vidhill
 ---
 
-<main>
-    <h1>Title: {{ title }}</h1>
-    {{ content | safe }}
-</main>
+<header>
+    <h1>{{title}}</h1>
+</header>
+<main>{{ content | safe }}</main>
+<footer>
+    {% for item in footerLinks %}
+    <a target="_blank" href="{{ item.link }}">{{ item.label }}</a>
+    {% endfor %}
+</footer>
