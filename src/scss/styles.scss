@@ -1,12 +1,18 @@
-@use "./colours";
+@use './colours';
+
+:root {
+  --foo: 10;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    box-sizing: border-box;
-    background: colours.$secondary;
+  box-sizing: border-box;
+  margin: 0;
+
+  background: colours.$secondary;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main {
-    max-width: 60rem;
-    margin: 0 auto;
+  max-width: 60rem;
+  margin: 0 auto;
 }
