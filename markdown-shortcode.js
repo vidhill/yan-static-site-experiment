@@ -1,3 +1,4 @@
+/* eslint-env node */
 const MarkdownIt = require('markdown-it');
 const path = require('path');
 
@@ -9,7 +10,7 @@ module.exports = {
             return new (function () {
                 this.tags = ['includeMd'];
 
-                this.parse = function (parser, nodes, lexer) {
+                this.parse = function (parser, nodes) {
                     var tok = parser.nextToken();
 
                     var args = parser.parseSignature(null, true);
