@@ -1,10 +1,11 @@
 ---
 layout: layouts/container.njk
-title: Dave's site
-username: joseph
+title: David Hill Software Engineer
+subTitle: Cork, Ireland
+username: vidhill
 ---
 
-<h1>Foo bar</h1>
-<p>hello world {{username}}</p>
-
-<div>{% includeMd 'test.md' %}</div>
+<div>
+    <h1>{{title}}</h1>
+    {% includeMd 'markdown/home.md' %}
+</div>
