@@ -1,0 +1,20 @@
+footer {
+  border-top: solid 1px #bbb;
+
+  .social-links {
+    display: inline-block;
+    color: #444;
+    font-size: 0.75em;
+    text-decoration: none;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  svg {
+    path {
+      fill: currentColor;
+    }
+  }
+}
