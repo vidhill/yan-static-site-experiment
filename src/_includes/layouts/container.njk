@@ -16,6 +16,8 @@ footerLinks:
 <main>{{ content | safe }}</main>
 <footer>
     {% for item in footerLinks %}
-    <a target="_blank" href="{{ item.link }}"> {{ ('/src/svgs/' + item.svgPath + '.svg') | svgContents("social-icon") | safe }} {{ item.label }}</a>
+    <a target="_blank" href="{{ item.link }}" class="social-links">
+        {{ ('/src/svgs/' + item.svgPath + '.svg') | svgContents("social-icon") | safe }} {{ item.label }}
+    </a>
     {% endfor %}
 </footer>
