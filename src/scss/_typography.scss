@@ -1,0 +1,6 @@
+// using full path import to functions
+@use './abstracts/functions';
+
+#{functions.header-range(1,6)} {
+  font-weight: normal;
+}
