@@ -1,0 +1,9 @@
+@function header-range($start, $end) {
+  $col-list: null;
+
+  @for $i from $start through $end {
+    $col-list: append($col-list, unquote('h#{$i}'), comma);
+  }
+
+  @return $col-list;
+}
