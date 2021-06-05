@@ -6,6 +6,9 @@
     ],
     "rules": {
         "order/properties-alphabetical-order": null,
-        "declaration-empty-line-before": null
-    }
+        "declaration-empty-line-before": null,
+        "max-nesting-depth": 2,
+        "selector-max-compound-selectors": 3
+    },
+    "ignoreFiles": ["public/**/*.*"]
 }
