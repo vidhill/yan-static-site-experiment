@@ -1,18 +1,10 @@
-@use './colours';
-
-:root {
-  --foo: 10;
-}
-
-body {
-  box-sizing: border-box;
-  margin: 0;
-
-  background: colours.$secondary;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-}
+@import './base';
+@import './typography';
+@import './typography-b';
+@import './footer';
 
 .social-icon {
   width: 2em;
+  padding: 0 0.125em 0 1em;
+  transform: translateY(0.66666em);
 }
