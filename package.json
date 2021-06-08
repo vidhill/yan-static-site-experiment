@@ -37,6 +37,7 @@
         "@11ty/eleventy": "^0.12.1",
         "@fortawesome/fontawesome-svg-core": "^1.2.35",
         "@fortawesome/free-brands-svg-icons": "^5.15.3",
+        "@vidhill/fortawesome-brands-11ty-shortcode": "^1.0.1",
         "eleventy-plugin-svg-contents": "^0.7.0",
         "eslint": "^7.27.0",
         "eslint-config-prettier": "^8.3.0",
