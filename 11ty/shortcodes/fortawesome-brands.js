@@ -8,6 +8,15 @@ function makeFortawesomeShortcode(icons, iconPrefix) {
         fortawesomeCore.library.add(icons[key]);
     }
 
+    /**
+     *
+     * Shortcode function that returns inline svg
+     *
+     * @param {string} iconName - The id of the icon
+     * @param {string} [additionalClasses] - css class names to add to the svg element, separate multiple class names with a comma
+     * @return {string} String representation inline SVG
+     *
+     */
     function fortawesomeShortcode(iconName, additionalClassesString) {
         const additionalClasses = additionalClassesString.split(',');
         const iconResult = fortawesomeCore.icon(
