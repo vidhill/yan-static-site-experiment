@@ -8,14 +8,15 @@ function makeFortawesomeShortcode(icons, iconPrefix) {
         fortawesomeCore.library.add(icons[key]);
     }
 
-    function fortawesomeShortcode(iconName, additionalClasses) {
-        const iconResult = fortawesomeFree.icon(
+    function fortawesomeShortcode(iconName, additionalClassesString) {
+        const additionalClasses = additionalClassesString.split(',');
+        const iconResult = fortawesomeCore.icon(
             {
                 prefix: iconPrefix,
                 iconName,
             },
             {
-                classes: [additionalClasses],
+                classes: additionalClasses,
             }
         );
 
