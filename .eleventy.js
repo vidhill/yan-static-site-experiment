@@ -1,6 +1,9 @@
 /* eslint-env node */
 const svgContents = require('eleventy-plugin-svg-contents');
-const markdownShortcode = require('./markdown-shortcode');
+const {
+    fortawesomeBrand,
+    markdown: markdownShortcode,
+} = require('./11ty/shortcodes');
 
 const cssPath = './src/scss/';
 
@@ -16,6 +19,8 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addWatchTarget(cssPath);
     eleventyConfig.addPassthroughCopy(cssPath);
+
+    eleventyConfig.addShortcode('fortawesomeBrand', fortawesomeBrand);
 
     return {
         dir: {
