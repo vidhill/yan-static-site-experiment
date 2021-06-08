@@ -10,6 +10,7 @@ Using as an opportunity to learn some new/old tech, or to use the buzzword [JAM 
 -   Checking out what's new/old in [Sass](https://sass-lang.com/)
 -   Linting of css with [stylelint](https://stylelint.io/)
 -   JS Linting with [eslint](https://eslint.org/) and [prettier](https://prettier.io/)
+-   Open sourcing some eleventy plugins [@vidhill/fortawesome-brands-11ty-shortcode](https://www.npmjs.com/package/@vidhill/fortawesome-brands-11ty-shortcode)
 
 Deployed using [netlify](https://www.netlify.com/)
 
