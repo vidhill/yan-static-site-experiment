@@ -1,11 +1,11 @@
-const fortawesomeFree = require('@fortawesome/fontawesome-svg-core');
+const fortawesomeCore = require('@fortawesome/fontawesome-svg-core');
 const brandIcons = require('@fortawesome/free-brands-svg-icons');
 
 const BRANDS_PREFIX = 'fab';
 
 function makeFortawesomeShortcode(icons, iconPrefix) {
     for (const key in icons[iconPrefix]) {
-        fortawesomeFree.library.add(icons[key]);
+        fortawesomeCore.library.add(icons[key]);
     }
 
     function fortawesomeShortcode(iconName, additionalClasses) {
@@ -24,7 +24,7 @@ function makeFortawesomeShortcode(icons, iconPrefix) {
         }
 
         const svgOutput = iconResult.abstract.map((abstract) => {
-            return fortawesomeFree.toHtml(abstract);
+            return fortawesomeCore.toHtml(abstract);
         });
 
         return svgOutput.join('');
