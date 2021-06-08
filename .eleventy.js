@@ -2,6 +2,8 @@
 const svgContents = require('eleventy-plugin-svg-contents');
 const markdownShortcode = require('./markdown-shortcode');
 
+const fortawesomeBrand = require('./11ty/shortcodes/fortawesome-brands');
+
 const cssPath = './src/scss/';
 
 const jsonFilter = function (value) {
@@ -16,6 +18,8 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addWatchTarget(cssPath);
     eleventyConfig.addPassthroughCopy(cssPath);
+
+    eleventyConfig.addShortcode('fortawesomeBrand', fortawesomeBrand);
 
     return {
         dir: {
