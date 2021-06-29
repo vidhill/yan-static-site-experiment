@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: Write tests!!\" && exit 1",
+        "prebuild": "rimraf public/",
         "build": "npm-run-all build:*",
         "start": "npm-run-all build:sass --parallel watch:*",
         "watch:sass": "npm run build-sass -- --watch",
