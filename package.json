@@ -11,6 +11,7 @@
         "watch:sass": "npm run build-sass -- --watch",
         "build-sass": "sass src/scss:public/css",
         "build:sass": "npm run build-sass -- --style compressed",
+        "build:js": "rollup -c",
         "prod-build": "ELEVENTY_PRODUCTION=true eleventy",
         "build:eleventy": "eleventy",
         "watch:eleventy": "npm run build:eleventy -- --serve",
