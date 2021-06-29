@@ -20,7 +20,8 @@
         "fix:scss": "npm run lint-scss -- --fix",
         "lint:js": "eslint *.js \"src/**/*.js\"",
         "fix:js": "npm run lint-js -- --fix",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "sassdoc": "sassdoc src/scss --theme herman"
     },
     "repository": {
         "type": "git",

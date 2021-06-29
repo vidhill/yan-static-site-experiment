@@ -111,3 +111,6 @@ dist
 
 # mac fun
 .DS_Store
+
+# sassdoc output
+sassdoc
