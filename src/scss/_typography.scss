@@ -1,6 +1,6 @@
 // using full path import to functions
-@use './abstracts/functions';
+@use './abstracts/mixins';
 
-#{functions.header-range(1,6)} {
+@include mixins.header-range(1,6) {
   font-weight: normal;
 }
