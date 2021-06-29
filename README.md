@@ -4,7 +4,7 @@
 
 Yet another static site experiment...
 
-Using as an opportunity to learn some new/old tech, or to use the buzzword [JAM stack](https://jamstack.org/generators/).
+Using as an opportunity to learn some new/old tech, or to use the buzzword [JAM stack](https://jamstack.org/what-is-jamstack/).
 
 ### Tech
 
