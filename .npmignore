@@ -1,0 +1,3 @@
+# workaround for 'no-unpublished-import/require' reporting errors importing devDependencies
+# https://github.com/mysticatea/eslint-plugin-node/issues/225
+*
