@@ -1,4 +1,5 @@
-/* eslint-env node */
+const path = require('path');
+
 const MarkdownIt = require('markdown-it');
 const path = require('path');
 

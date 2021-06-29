@@ -1,4 +1,3 @@
-/* eslint-env node */
 const svgContents = require('eleventy-plugin-svg-contents');
 const {
     fortawesomeBrandsPlugin,
