@@ -11,7 +11,7 @@ export default {
     output: [
         {
             format: 'module',
-            file: `${outputDir}/${filename}.cjs.js`,
+            file: `${outputDir}/${filename}.esm.js`,
             sourcemap: true,
         },
         {
