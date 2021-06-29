@@ -1,0 +1,9 @@
+@use './functions';
+
+@mixin header-range($start, $end) {
+  $selectors: #{functions.make-header-range-selector($start, $end)};
+
+  #{$selectors} {
+    @content;
+  }
+}

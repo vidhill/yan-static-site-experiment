@@ -1,4 +1,12 @@
-@function header-range($start, $end) {
+/// Generate a header selector range, between `$start` and `$end`.
+///
+/// @group functions
+/// @param {Number} $start [1] - minimum range value
+/// @param {Number} $end [7]- maximum range value
+///
+/// @return {String}
+///
+@function make-header-range-selector($start: 1, $end: 7) {
   $col-list: null;
 
   @for $i from $start through $end {
