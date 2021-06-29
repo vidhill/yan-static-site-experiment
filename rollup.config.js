@@ -1,4 +1,6 @@
 import json from '@rollup/plugin-json';
+import { babel } from '@rollup/plugin-babel';
+import commonjs from '@rollup/plugin-commonjs';
 
 const outputDir = 'public/js';
 const filename = 'bundle';
@@ -14,5 +16,5 @@ export default {
             file: `${outputDir}/${filename}.js`,
         },
     ],
-    plugins: [json()],
+    plugins: [json(), commonjs(), babel({ babelHelpers: 'bundled' })],
 };
