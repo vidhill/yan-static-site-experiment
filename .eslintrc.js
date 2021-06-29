@@ -9,7 +9,7 @@ module.exports = {
         sourceType: 'module',
     },
     rules: {},
-    ignorePatterns: ['!.eleventy.js'],
+    ignorePatterns: ['!.eleventy.js', 'public/'],
     overrides: [
         {
             extends: ['vidhill/node'],
