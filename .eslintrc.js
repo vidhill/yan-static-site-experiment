@@ -1,14 +1,22 @@
-/* eslint-env node */
 module.exports = {
     env: {
         browser: true,
         es2021: true,
     },
-    extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+    extends: ['vidhill'],
     parserOptions: {
         ecmaVersion: 12,
         sourceType: 'module',
     },
     rules: {},
-    ignorePatterns: ['!.eleventy.js'],
+    ignorePatterns: ['!.eleventy.js', 'public/'],
+    overrides: [
+        {
+            extends: ['vidhill/node'],
+            files: ['11ty/**/*.js', '.eleventy.js', '.eslintrc.js'],
+            env: {
+                node: true,
+            },
+        },
+    ],
 };

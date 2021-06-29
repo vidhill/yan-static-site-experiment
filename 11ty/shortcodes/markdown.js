@@ -1,6 +1,6 @@
-/* eslint-env node */
-const MarkdownIt = require('markdown-it');
 const path = require('path');
+
+const MarkdownIt = require('markdown-it');
 
 module.exports = {
     configFunction: function (eleventyConfig, options = {}) {
