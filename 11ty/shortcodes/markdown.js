@@ -1,7 +1,6 @@
 const path = require('path');
 
 const MarkdownIt = require('markdown-it');
-const path = require('path');
 
 module.exports = {
     configFunction: function (eleventyConfig, options = {}) {
