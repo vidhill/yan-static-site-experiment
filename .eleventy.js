@@ -19,7 +19,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter('json', jsonFilter);
 
     eleventyConfig.addWatchTarget(cssPath);
-    eleventyConfig.addPassthroughCopy(cssPath);
+    eleventyConfig.addPassthroughCopy('./src/assets/');
 
     return {
         dir: {
