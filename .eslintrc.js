@@ -13,7 +13,12 @@ module.exports = {
     overrides: [
         {
             extends: ['vidhill/node'],
-            files: ['11ty/**/*.js', '.eleventy.js', '.eslintrc.js'],
+            files: [
+                '11ty/**/*.js',
+                'src/_data/siteData.js',
+                '.eleventy.js',
+                '.eslintrc.js',
+            ],
             env: {
                 node: true,
             },
