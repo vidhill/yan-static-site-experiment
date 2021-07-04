@@ -23,5 +23,18 @@ module.exports = {
                 node: true,
             },
         },
+        {
+            files: ['src/_data/*'],
+            rules: {
+                // filenames form 11ty data files need to be camelCase to allow for variable not to contain dash for nunjucks
+                // https://github.com/11ty/11ty-website/pull/216
+                'unicorn/filename-case': [
+                    'error',
+                    {
+                        case: 'camelCase',
+                    },
+                ],
+            },
+        },
     ],
 };
