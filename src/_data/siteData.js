@@ -1,6 +1,6 @@
-{
-    "title": "David Hill Software Engineer",
-    "subTitle": "Cork, Ireland",
-    "username": "vidhill",
-    "absoluteUrl": "https://www.davidhill.ie"
-}
+module.exports = {
+    title: 'David Hill Software Engineer',
+    subTitle: 'Cork, Ireland',
+    username: 'vidhill',
+    absoluteUrl: process.env.URL || 'http://localhost:' + process.env.PORT,
+};
