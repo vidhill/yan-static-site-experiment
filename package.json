@@ -14,7 +14,7 @@
         "build:js": "rollup -c",
         "prod-build": "ELEVENTY_PRODUCTION=true eleventy",
         "build:eleventy": "eleventy",
-        "watch:eleventy": "npm run build:eleventy -- --serve",
+        "watch:eleventy": "export PORT=8080; npm run build:eleventy -- --serve --port $PORT",
         "lint": "npm-run-all --parallel lint:*",
         "lint-fix": "npm-run-all --parallel fix:*",
         "lint-html": "prettier \"src/**/*.{html,handlebars,njk,md}\"",
