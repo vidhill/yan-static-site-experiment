@@ -3,4 +3,4 @@ layout: layouts/container.njk
 permalink: 404.html
 ---
 
-<div>Page not found <a href="./">Home</a></div>
+Page not found [Return to Homepage]({{ '/' | url }})
