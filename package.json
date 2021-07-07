@@ -33,6 +33,7 @@
     },
     "keywords": [],
     "author": "David Hill",
+    "private": true,
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/vidhill/yan-static-site-experiment/issues"
