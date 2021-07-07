@@ -1,7 +1,7 @@
 {
     "name": "yan-static-site-experiment",
     "version": "1.0.0",
-    "description": "",
+    "description": "Yet another static site experiment.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: Write tests!!\" && exit 1",
@@ -32,12 +32,13 @@
         "url": "git+https://github.com/vidhill/yan-static-site-experiment.git"
     },
     "keywords": [],
-    "author": "",
+    "author": "David Hill",
+    "private": true,
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/vidhill/yan-static-site-experiment/issues"
     },
-    "homepage": "https://github.com/vidhill/yan-static-site-experiment#readme",
+    "homepage": "https://davidhill.ie",
     "devDependencies": {
         "@11ty/eleventy": "^0.12.1",
         "@babel/core": "^7.14.6",
