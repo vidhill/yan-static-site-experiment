@@ -6,7 +6,7 @@
 /// @param {Number} $start [1] - minimum range value
 /// @param {Number} $end [7]- maximum range value
 ///
-/// @return {String}
+/// @returns {String}
 ///
 @function make-header-range-selector($start: 1, $end: 7) {
   $col-list: null;
