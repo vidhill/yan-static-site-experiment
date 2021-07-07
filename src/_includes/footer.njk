@@ -1,5 +1,7 @@
 <footer>
     {% for item in footerLinks %}
-    <a target="_blank" href="{{ item.link }}" class="social-links"> {% fortawesomeBrand item.svgPath, "social-icon" %} {{ item.label }} </a>
+    <a target="_blank" href="{{ item.link }}" class="social-links" rel="noreferrer noopener">
+        {% fortawesomeBrand item.iconName, "social-icon" %} {{ item.label }}
+    </a>
     {% endfor %}
 </footer>
