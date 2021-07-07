@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 /// Generate a header selector range, between `$start` and `$end`.
 ///
 /// @group functions
@@ -14,4 +16,17 @@
   }
 
   @return $col-list;
+}
+
+/// Generate a colour scaled by value,
+/// almost identical to color.scale but unit-less.
+///
+/// @group functions
+/// @param {Color} $colour - minimum range value
+/// @param {Number} $amount [0] - unitless number,  without percent symbol
+///
+/// @returns {Color} A colour scaled by the amount passed
+///
+@function colour-lightness($colour, $amount: 0) {
+  @return color.scale($colour, $lightness: $amount * 1%);
 }
