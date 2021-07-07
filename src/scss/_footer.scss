@@ -1,5 +1,8 @@
 footer {
+  flex-shrink: 0;
+
   border-top: solid 1px #bbb;
+  margin-bottom: 1em;
 
   .social-links {
     display: inline-block;

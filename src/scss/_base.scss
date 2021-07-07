@@ -4,12 +4,23 @@
   --foo: 10;
 }
 
+html,
 body {
+  height: 100%;
+}
+
+body {
+  display: flex;
   box-sizing: border-box;
+  flex-direction: column;
   padding: 0 4em;
   margin: 0;
 
   background: colours.$secondary;
   font-family: Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+}
+
+main {
+  flex: 1 0 auto;
 }
